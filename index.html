@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiptea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="popup center">
+        <div class="icon">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="title">
+            Feature in Development
+        </div>
+        <div class="description">
+            This feature will be added soon to the website.<br>Thank you.
+        </div>
+        <div class="dismiss-btn">
+            <button id="dismiss-popup-btn">Dismiss</button>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#rating">Rating</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" id="open-popup-btn" class="fa fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fa fa-times" id="open-popup-btn"></span>
+                <img src="images/cart1.png" alt="tea">
+                <div class="content">
+                    <h3>Cart Item 01</h3>
+                    <div class="price">₹399/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fa fa-times" id="open-popup-btn"></span>
+                <img src="images/cart2.png" alt="tea">
+                <div class="content">
+                    <h3>Cart Item 02</h3>
+                    <div class="price">₹399/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fa fa-times" id="open-popup-btn"></span>
+                <img src="images/cart3.png" alt="tea">
+                <div class="content">
+                    <h3>Cart Item 03</h3>
+                    <div class="price">₹399/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <span class="fa fa-times" id="open-popup-btn"></span>
+                <img src="images/cart4.png" alt="tea">
+                <div class="content">
+                    <h3>Cart Item 04</h3>
+                    <div class="price">₹399/-</div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" id="open-popup-btn" class="btn">Checkout Now</a>
+        </div>
+    </header>
+
+    <div class="blur">
+        <section class="home" id="home">
+            <div class="content">
+                <h3><span>TIPTEA se TRIPTEA</span><br>For those special moments</h3>
+                <p>Share it with your dear ones and make the moments memorable.</p>
+                <a href="#products" class="btn">Get Yours Now</a>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <h1 class="heading"> <span>Features</span> </h1>
+
+            <div class="row">
+                <div class="image">
+                    <img src="images/features.jpg" alt="features">
+                </div>
+
+                <div class="content">
+                    <h3>What makes our tea special?</h3>
+                    <p>Tiptea has the adequate amount of caffeine which refreshes you and at the same time doesn't
+                        affect your health.
+                    </p>
+                    <p>Tiptea provides a soothing, cooling and stimulating effect to the body.</p>
+                    <p>Tiptea offers vastly different profiles of tea that include sweet, nutty and floral flavours.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <h1 class="heading">Our <span>menu</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/menu-1.png" alt="Menu">
+                    <h3>Masala Tea</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" class="btn" id="open-popup-btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-2.png" alt="Menu">
+                    <h3>Ginger Tea</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" id="open-popup-btn" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-3.png" alt="Menu">
+                    <h3>Salted Caramel</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" id="open-popup-btn" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-4.png" alt="Menu">
+                    <h3>Chocolate Tea</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" id="open-popup-btn" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-5.png" alt="Menu">
+                    <h3>Cardamon Tea</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" id="open-popup-btn" class="btn">add to cart</a>
+                </div>
+                <div class="box">
+                    <img src="images/menu-6.png" alt="Menu">
+                    <h3>Mint Tea</h3>
+                    <div class="price">₹399 <span>499</span></div>
+                    <a href="javascript:void(0);" id="open-popup-btn" class="btn">add to cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h1 class="heading">our <span>products</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-shopping-cart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-heart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/product-1.png" alt="Product 1">
+                    </div>
+                    <div class="content">
+                        <h3>Honey Lemon tea</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="price">₹399 <span>499</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-shopping-cart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-heart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/product-2.png" alt="Product 2">
+                    </div>
+                    <div class="content">
+                        <h3>Black Tea</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="price">₹399 <span>499</span></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-shopping-cart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-heart"></a>
+                        <a href="javascript:void(0);" id="open-popup-btn" class="fa fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/product-3.png" alt="Product 3">
+                    </div>
+                    <div class="content">
+                        <h3>Matcha tea</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <div class="price">₹399 <span>499</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>About</span> us</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/pic-1.png" alt="1" class="user">
+                    <h3>Kartikey Raghav</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas obcaecati
+                        dolore, error dolorum sapiente quibusdam vel iste soluta recusandae beatae nisi laborum
+                        repellendus
+                        optio ut ex fugiat odit!</p>
+                </div>
+                <div class="box">
+                    <img src="images/pic-1.png" alt="1" class="user">
+                    <h3>Neeraj Yadav</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas obcaecati
+                        dolore, error dolorum sapiente quibusdam vel iste soluta recusandae beatae nisi laborum
+                        repellendus
+                        optio ut ex fugiat odit!</p>
+                </div>
+                <div class="box">
+                    <img src="images/pic-1.png" alt="1" class="user">
+                    <h3>Lakshay Saini</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas obcaecati
+                        dolore, error dolorum sapiente quibusdam vel iste soluta recusandae beatae nisi laborum
+                        repellendus
+                        optio ut ex fugiat odit!</p>
+                </div>
+                <div class="box">
+                    <img src="images/pic-1.png" alt="1" class="user">
+                    <h3>Bhanu Pratap Singh</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat quas obcaecati
+                        dolore, error dolorum sapiente quibusdam vel iste soluta recusandae beatae nisi laborum
+                        repellendus
+                        optio ut ex fugiat odit!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="image">
+                    <img src="images/about.jpg" alt="about">
+                </div>
+
+                <div class="content">
+                    <h3>Why did we choose this product?</h3>
+                    <p>India has a wide market of tea with the demand increasing day by day.</p>
+                    <p>It is low cost business with high profit margins.</p>
+                    <p>It gets regular customers.</p>
+                    <p>One can diversify the product range.</p>
+                    <p>It is an ethical and sustainable business.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="rating" id="rating">
+            <h1 class="heading"><span>Rate</span> us</h1>
+
+            <div class="container">
+                <div class="criteria">
+                    <h3 class="name">Creativity and Innovation</h3>
+                    <div class="rate">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                        <input type="radio" name="creativity">
+                    </div>
+                </div>
+                <div class="criteria">
+                    <h3 class="name">Design</h3>
+                    <div class="rate">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                        <input type="radio" name="design">
+                    </div>
+                </div>
+                <div class="criteria">
+                    <h3 class="name">Marketing Ways</h3>
+                    <div class="rate">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                        <input type="radio" name="marketing">
+                    </div>
+                </div>
+                <div class="criteria">
+                    <h3 class="name">User Friendliness</h3>
+                    <div class="rate">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                        <input type="radio" name="user-friendliness">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review" id="reviews">
+            <h1 class="heading">customer's <span>review</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/quote-img.png" alt="Quote" class="quote">
+                    <p>Tried the Honey Lemon Tea. The great blend of lemon & soothing honey with tea proves
+                        to be a perfect balanced beverage to start the day. This truly adds vitality to the system &
+                        keep the mind refreshed.</p>
+                    <img src="images/pic-1.png" alt="1" class="user">
+                    <h3>Rohit</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/quote-img.png" alt="Quote" class="quote">
+                    <p>What a Aroma it has,Taste is good. Improves digestion, Immunitybooster, Stress relief, improves
+                        blood circulation,etc. Their is a lot of benifits from this Tea.</p>
+                    <img src="images/pic-2.png" alt="2" class="user">
+                    <h3>Komya</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/quote-img.png" alt="Quote" class="quote">
+                    <p>Taste is subjective.. but for me it was good, i found it to be very unique than regular tea since
+                        its mint tea. Im enjoying it so far 👍👍</p>
+                    <img src="images/pic-3.png" alt="3" class="user">
+                    <h3>Shourya</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>contact</span> us</h1>
+
+            <div class="row">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.137791596747!2d77.0357613535914!3d28.430287233080186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d187314e13c59%3A0x76f30bc70ce8d09f!2sWorld%20Trade%20Center%2C%20SH13%2C%20Sector%2033%2C%20Gurugram%2C%20Haryana%20122005!5e0!3m2!1sen!2sin!4v1660563375490!5m2!1sen!2sin"
+                    width="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="">
+                    <h3>get in touch</h3>
+                    <div class="inputBox">
+                        <span class="fa fa-user"></span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fa fa-envelope"></span>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fa fa-phone"></span>
+                        <input type="number" placeholder="Number">
+                    </div>
+                    <input type="button" class="btn" id="open-popup-btn" value="Contact Now">
+                </form>
+            </div>
+        </section>
+
+        <section class="blogs" id="blogs">
+            <h1 class="heading">our <span>blogs</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-1.jpeg" alt="Blog 1">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">Tasty and Refreshing Tea</a>
+                        <span>by admin / 13<sup>st</sup> aug, 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptas.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-2.jpeg" alt="Blog 2">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">Tasty and Refreshing Tea</a>
+                        <span>by admin / 13<sup>st</sup> aug, 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptas.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/blog-3.jpeg" alt="Blog 3">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">Tasty and Refreshing Tea</a>
+                        <span>by admin / 13<sup>st</sup> aug, 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptas.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fa fa-facebook-f"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#menu">Menu</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#rating">Rating</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+                <a href="#blogs">Blogs</a>
+            </div>
+
+            <div class="credit">created by <span>TIPTEA Pvt. Ltd.</span> | all rights reserved</div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
