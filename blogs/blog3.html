@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>14 Tea recipes you haven't made yet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog1.css">
+    <link rel="stylesheet" href="../css/blog2.css">
 </head>
 <body>
-    
+    <div class="popup center">
+        <div class="icon">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="title">
+            Feature in Development
+        </div>
+        <div class="description">
+            This feature will be added soon to the website.<br>Thank you.
+        </div>
+        <div class="dismiss-btn">
+            <button id="dismiss-popup-btn">Dismiss</button>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <a href="javascript:void(0)" class="logo">
+            <img src="../images/logo.png" alt="TIPTEA logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="#white">White Tea</a>
+            <a href="#herbal">Herbal Tea</a>
+            <a href="#green">Green Tea</a>
+            <a href="#black">Black tea</a>
+            <a href="#oolong">Oolong Tea</a>
+            <a href="#avoid">Teas to Avoid</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" id="open-popup-btn" class="fa fa-search"></label>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>14 Tea Recipes You Can Easily Brew Up at Home</h3>
+            <p>Making your own tea at home enables you to fully control the strength and flavor. Try some of these recipes to get started.</p>
+            <a href="#products" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <div class="blur">
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fa fa-facebook-f"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="#white">Fresh Mint</a>
+                <a href="#herbal">LemonGrass</a>
+                <a href="#green">Thai Iced</a>
+                <a href="#black">Masala Chai</a>
+                <a href="#oolong">Orange Mint</a>
+                <a href="#avoid">Southern Fruit</a>
+            </div>
+
+            <div class="credit">created by <span>TIPTEA Pvt. Ltd.</span> | all rights reserved</div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        let navbar = document.querySelector('.navbar');
+        let searchForm = document.querySelector('.search-form');
+        let popup = document.querySelector('.popup');
+
+        document.querySelector('#menu-btn').onclick = () => {
+            navbar.classList.toggle('active');
+            searchForm.classList.remove('active');
+        }
+
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+            navbar.classList.remove('active');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            popup.classList.remove('active');
+        }
+
+        for (let i = 0; i < document.querySelectorAll('#open-popup-btn').length; i++) {
+            document.querySelectorAll('#open-popup-btn')[i].addEventListener("click", () => {
+                popup.style.top = `${window.pageYOffset + (screen.availHeight) / 2}` + 'px';
+                popup.classList.add("active");
+            })
+        }
+
+        document.getElementById('dismiss-popup-btn').addEventListener("click", () => {
+            popup.classList.remove("active");
+        })
+    </script>
 </body>
 </html>
