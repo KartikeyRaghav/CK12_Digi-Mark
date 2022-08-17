@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage Herbal Tea Recipe</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog1.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="popup center">
+        <div class="icon">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="title">
+            Feature in Development
+        </div>
+        <div class="description">
+            This feature will be added soon to the website.<br>Thank you.
+        </div>
+        <div class="dismiss-btn">
+            <button id="dismiss-popup-btn">Dismiss</button>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <a href="javascript:void(0)" class="logo">
+            <img src="../images/logo.png" alt="TIPTEA logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="#intro">Introduction</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#steps">Steps</a>
+            <a href="#variation">Variations</a>
+            <a href="../blogs/blog2.html">Back</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" id="open-popup-btn" class="fa fa-search"></label>
+        </div>
+    </header>
+
+    <div class="blur">
+        <section class="home" id="home">
+            <div class="content">
+                <h3></h3>
+                <p></p>
+                <a href="#intro" class="btn">Get Started</a>
+            </div>
+        </section>
+
+        <section class="features" id="intro">
+            <h1 class="heading"><span>Introduction</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="ingredients">
+            <h1 class="heading"><span>Ingredients</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <ul class="ul">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="steps">
+            <h1 class="heading"><span>Steps</span> to make it</h1>
+
+            <div class="row">
+                <div class="content">
+                    <ul class="ul">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="variations">
+            <h1 class="heading"><span>Variations</span></h1>
+
+            <div class="row">
+                <div class="content">
+                    <p></p>
+                    <ul class="ul">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fa fa-facebook-f"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="#intro">Introduction</a>
+                <a href="#ingredients">Ingredients</a>
+                <a href="#steps">Steps</a>
+                <a href="#variation">Variations</a>
+                <a href="../blogs/blog2.html">Back</a>
+            </div>
+
+            <div class="credit">created by <span>TIPTEA Pvt. Ltd.</span> | all rights reserved</div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        let navbar = document.querySelector('.navbar');
+        let searchForm = document.querySelector('.search-form');
+        let popup = document.querySelector('.popup');
+
+        document.querySelector('#menu-btn').onclick = () => {
+            navbar.classList.toggle('active');
+            searchForm.classList.remove('active');
+        }
+
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+            navbar.classList.remove('active');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            popup.classList.remove('active');
+        }
+
+        for (let i = 0; i < document.querySelectorAll('#open-popup-btn').length; i++) {
+            document.querySelectorAll('#open-popup-btn')[i].addEventListener("click", () => {
+                popup.style.top = `${window.pageYOffset + (screen.availHeight) / 2}` + 'px';
+                popup.classList.add("active");
+            })
+        }
+
+        document.getElementById('dismiss-popup-btn').addEventListener("click", () => {
+            popup.classList.remove("active");
+        })
+    </script>
+</body>
+
+</html>
