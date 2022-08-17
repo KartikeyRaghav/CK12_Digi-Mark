@@ -32,7 +32,3 @@ html{
     background-position: center;
     background-blend-mode: darken; 
 }
-
-.features .row .content p{
-    text-align: justify;
-}
