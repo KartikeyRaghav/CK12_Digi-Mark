@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="popup center">
         <div class="icon">
@@ -39,7 +41,7 @@
             <a href="#ingredients">Ingredients</a>
             <a href="#steps">Steps</a>
             <a href="#variation">Variations</a>
-            <a href="#southern">Southern Fruit</a>
+            <a href="../blogs/blog2.html">Back</a>
         </nav>
 
         <div class="icons">
@@ -52,5 +54,62 @@
             <label for="search-box" id="open-popup-btn" class="fa fa-search"></label>
         </div>
     </header>
+
+    <div class="blur">
+        <section class="footer">
+            <div class="share">
+                <a href="#" class="fa fa-facebook-f"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+
+            <div class="links">
+                <a href="../index.html">Home</a>
+                <a href="#nutrition">Nutrition Facts</a>
+                <a href="#intro">Introduction</a>
+                <a href="#ingredients">Ingredients</a>
+                <a href="#steps">Steps</a>
+                <a href="#variation">Variations</a>
+                <a href="../blogs/blog2.html">Back</a>
+            </div>
+
+            <div class="credit">created by <span>TIPTEA Pvt. Ltd.</span> | all rights reserved</div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        let navbar = document.querySelector('.navbar');
+        let searchForm = document.querySelector('.search-form');
+        let popup = document.querySelector('.popup');
+
+        document.querySelector('#menu-btn').onclick = () => {
+            navbar.classList.toggle('active');
+            searchForm.classList.remove('active');
+        }
+
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+            navbar.classList.remove('active');
+        }
+
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            popup.classList.remove('active');
+        }
+
+        for (let i = 0; i < document.querySelectorAll('#open-popup-btn').length; i++) {
+            document.querySelectorAll('#open-popup-btn')[i].addEventListener("click", () => {
+                popup.style.top = `${window.pageYOffset + (screen.availHeight) / 2}` + 'px';
+                popup.classList.add("active");
+            })
+        }
+
+        document.getElementById('dismiss-popup-btn').addEventListener("click", () => {
+            popup.classList.remove("active");
+        })
+    </script>
 </body>
+
 </html>
